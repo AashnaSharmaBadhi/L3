@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="contact.css" rel="stylesheet" />
+   <title>Contact Us</title>
+ </head>
+ <body>
+    <div class="container">
+
+
+      <header class="main-header">
+        <div  id="logo">  
+          <a href="index.html" ><img src="image/logo.jpg" alt="our-logo" ></a> 
+        </div>
+      <h1 id="text">Fashion Update</h1>
+       
+      </header>
+
+
+    
+      <nav class="link">
+        <a href="index.html">Home</a>
+        <a href="men.html">Men</a> 
+        <a href="women.html">Women</a>
+        <a href="kid.html">Kid</a>   
+        <a href="contact.html">Contact Us</a>
+      </nav>  
+
+      <div class="mid-page">
+
+
+        <a class="nav_bar" href="#about_us">About Us</a>
+        
+
+        
+        <h2> Please Enter Your Information to Contact with us.</h2>
+
+        <img src="prd/contact.webp" alt="mailing" class="contact">
+
+
+      
+        <script type="text/javascript">
+
+          function validateForm() {
+            let name = document.forms["myForm"]["name"].value;
+            if (name == "") {
+              alert("Name must be filled out");
+             return false;
+            }
+
+            let email = document.forms["myForm"]["Email"].value;
+            if (email == "") {
+              alert("Email must be filled out");
+              return false;
+            }
+
+            let number = document.forms["myForm"]["phone"].value;
+            if (number == "") {
+              alert("Phone number must be filled out");
+              return false;
+            }
+
+            let address = document.forms["myForm"]["address"].value;
+            if (address == "") {
+              alert("Address must be filled out");
+              return false;
+            }
+          }
+
+        </script>
+
+
+
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+         Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Text" name="name" /><br><br>
+         Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Text" name="Email" /><br><br>
+         Phone Number:&nbsp;&nbsp;&nbsp;<input type="Text" Name="phone" /><br><br>
+         Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Text" name="address" size="20" maxlength="20"><br><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit">
+          &nbsp;&nbsp;&nbsp;<input type="button" value="Cancel">
+        </form>
+
+
+
+
+      </div>
+
+
+      <div id="about_us">
+        <h2>About Us</h2>
+        <p>Welcome to Fashion update, your’s choice for the latest fashion.Our website was founded in 2003 by a team of fashion pumped up who wanted to create a platform where people could find up to date information about latest fashion.</p>
+
+
+
+      </div>
+
+    
+        <footer class="more-info">
+          <p id="copyright">Copyright &copy; 2023 by Fashion update </p>
+          <p>fashionwear@gmail.com</p>
+          <p>New Baneshwor, Min Bhawan</p>
+          <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="image/facebook.png"  alt="instagram" class="media"></a> 
+            <a href="https://www.tiktok.com/en/" target="_blank"><img src="image/tiktok.png" alt="tiktok"  class="media"></a>
+          </div>
+
+        </footer>
+   
+
+    </div>
+
+  
+  </body>
+
+</html>

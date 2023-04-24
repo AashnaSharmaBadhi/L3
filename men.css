@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+  
+/* top-page */
+.container {
+   margin: 0 auto;
+}
+  
+p,
+h2 {
+    
+  padding: 10px 15px;
+  padding-bottom: 5px
+}
+  
+#logo img {
+  width: 100px;
+  height: auto;
+  margin-right:10px;
+}
+  
+.main-header {
+  height: 100px;
+  border-top:8px solid rgba(14, 135, 216, 0.712) ;
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+  background-color:aqua;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+} 
+  
+  
+  
+/* mid-page */
+.mid-page {
+  height: 1000px;
+  background-image: url(image/mens_wear.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
+  
+.products {
+  margin:50px 70px;
+  padding-right: 180px;
+  width: 1000px;
+  height: auto;
+  text-align: center;
+}
+  
+.clothes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+
+}
+  
+.clothes img {
+  padding-right: 200px;
+  /* padding-bottom: 50px; */
+  margin-top: 150px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+/* links */
+.link {
+  border-top:8px solid rgba(14, 135, 216, 0.712) ;
+  
+  text-align: center;
+  padding: 20px 25px;
+  border-bottom:5px dotted brown;
+  /* border-top: 5px solid; */
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+  
+.link a {
+  text-decoration: none;
+  margin-left: 50px;
+  color:brown;
+}
+  
+
+  
+a:hover {
+  color: coral;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+  
+  
+a:active {
+  font-style: italic;
+}
+  
+  
+  
+  
+  
+  
+/* bottom-page */
+.media {
+  width: 80px;
+  height: auto;
+}
+  
+  
+  
+.more-info {
+  text-align: center;
+  background-color: blueviolet;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  padding-left: 30px;
+}
