@@ -1,8 +1,113 @@
-<html>
-   <head>
-     <title>My title</title>
- <head>
- <body>
-    My first page
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="index.css" rel="stylesheet" />
+   <title>Fashion</title>
+  </head>
+  <body>
+   <div class="container">
+
+    <header class="main-header">
+      <div  id="logo">
+        <a href="index.html" ><img src="image/logo.jpg" alt="our-logo"></a> 
+      </div>
+    <h1 id="text">Fashion Update</h1>
+     
+    </header>
+
+
+    
+    <nav class="link">
+      <a href="index.html">Home</a>
+      <a href="men.html">Men</a> 
+      <a href="women.html">Women</a>
+      <a href="kid.html">Kids</a>   
+      <a href="contact.html">Contact Us</a>
+   </nav>  
+
+
+
+
+
+
+   <div class="mid-page">
+
+  
+    <div class="slideshow">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="prd/slide1.jpg" style="width:100%">
+        <div class="text">Men's Fashion</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="prd/slide2.jpg" style="width:100%">
+        <div class="text">Women's Fashion</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="prd/slide3.jpg" style="width:100%">
+        <div class="text">Kids Wear</div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+      </script>
+  
+
+
+
+
+
+
+   </div>
+   <footer class="more-info">
+    <p id="copyright">Copyright &copy; 2023 by Fashion update </p>
+    <p>fashionwear@gmail.com</p>
+    <p>New Baneshwor, Min Bhawan</p>
+    <div>
+      <a href="https://www.facebook.com/" target="_blank"><img src="image/facebook.png"  alt="facebook" class="media"></a> 
+      <a href="https://www.tiktok.com/en/" target="_blank"><img src="image/tiktok.png" alt="tiktok"  class="media"></a>
+    </div>
+  </footer>
+
+
+   </div>
+
+  
+  </body>
+
 </html>
